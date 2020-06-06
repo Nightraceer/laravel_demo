@@ -1,0 +1,25 @@
+.cart-success-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: #ffffff;
+  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.6);
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s;
+
+  &.show, &:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .cart-item-name {
+    padding: 20px 10px;
+    font-size: 26px;
+  }
+}

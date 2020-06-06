@@ -1,0 +1,47 @@
+.cart-page {
+  table {
+    width: 100%;
+
+    tr {
+      &.spacer {
+        td {
+          padding: 15px;
+        }
+      }
+      td {
+        padding-right: 20px;
+        vertical-align: middle;
+      }
+    }
+    .image {
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+
+    .other {
+      .inner {
+        display: flex;
+        align-items: center;
+
+        .quantity {
+          margin-right: 20px;
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+
+          button {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .total {
+    font-size: 28px;
+  }
+}
